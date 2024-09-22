@@ -1,12 +1,13 @@
 // import React from 'react'
-// // import Home from './home'
-// // import New from './comp/New' 
+// import Home from './home'
+// import New from './comp/New' 
 // import  './App.css'
 // const  App =()=> {
 //   let arr =[1,3,5,5,3,5,3]
+  
 //   return (
 //     <div>
-//       {
+//       {/* {
 //         arr.map((a)=>{
 //           return(<>
           
@@ -14,16 +15,14 @@
           
 //           </>)
 //         })
-//       }
-      
-     
+//       } */}
+//       <Home data={arr}/>
+//      <New/>
 //     </div>
 //   )
 // }
 
 // export default App
-
-
 
 ///////////////////////////////////////////////////////////
 
@@ -44,27 +43,7 @@
 
 
 //////////////////////////////////////////////////////////////////////////////////
-// import React, {  useState } from 'react'
 
-// export const App = () => {
-
-//   let [count,setcount]=useState(0)
-//   let [color,setcolor]=useState('red')
-//   function fun1(){
-//     setcount(count+1)
-//     setcolor('green')
-//   }
-  
-//   return (
-//     <div style={{background:color,height:'100px' , width:'100px '}}>
-//       <p>{count}</p>
-//       <button onClick={fun1}>click</button>
-//       <button onClick={fun1}>color green</button>
-//     </div>
-//   )
-// }
-// export default App
-////////////////////////////////////////////////////////////////
 
 import React from 'react'
 import { Clock } from './Clock'
@@ -72,7 +51,8 @@ import Input from './input'
 import Todolist from './Todolist'
 import UseEffect from './UseEffect'
 import Practice from './Practice'
-
+import UseState from './UseState'
+import Boot from './Bootstap/Boot'
 export const App = () => {
   return (
     <div>
@@ -80,8 +60,37 @@ export const App = () => {
       {/* <Input/> */}
       {/* <Todolist/> */}
       {/* <UseEffect/> */}
-        <Practice/>
+      {/* <UseState/> */}
+       <Boot/>   
+         
+
+
+        {/* <Practice/> */}
     </div>
   )
 }
 export default App
+
+//////.....................Routing
+// import React from 'react'
+// import Navbar from './Rauting/Navbar'
+// import About from './Rauting/About'
+// import Home from './Rauting/Home'
+// import Contact from './Rauting/Contact'
+// import { BrowserRouter as Router , Route,Routes} from 'react-router-dom'
+// const App = () => {
+//   return (
+//     <div>
+//       <Router>
+//       <Navbar/>
+//       <Routes>
+//        <Route path='/' element={ <Home/>}/>
+//        <Route path='/about' element={ <About/>}/>
+//        <Route path='/contact' element={ <Contact/>}/>
+//       </Routes>
+//       </Router>
+//     </div>
+//   )
+// }
+
+// export default App
