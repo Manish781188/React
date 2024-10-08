@@ -28,13 +28,14 @@
 
 
 // import React from 'react'
-// import Home from './home'
+// import Home from './Home'
 
 // const App = () => {
-//   let a='hello'
+//   // let a='hello'
 //   return (
 //     <div >
-//       <Home data={a}/>  
+//       {/* <Home data={a}/>   */}
+//       <Home/>
 //     </div>
 //   )
 // }
@@ -42,7 +43,7 @@
 // export default App
 
 
-//////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
 
 
 import React from 'react'
@@ -53,6 +54,12 @@ import UseEffect from './UseEffect'
 import Practice from './Practice'
 import UseState from './UseState'
 import Boot from './Bootstap/Boot'
+import Form from './Form'
+import UseReducer from './UseReducer'
+import API from './API'
+import LoginSignup from './Login SignUp/LoginSignup'
+import UseRef from './UseRef'
+import InpCreatCord from './InpCreatCord'
 export const App = () => {
   return (
     <div>
@@ -61,10 +68,13 @@ export const App = () => {
       {/* <Todolist/> */}
       {/* <UseEffect/> */}
       {/* <UseState/> */}
-       <Boot/>   
-         
-
-
+       {/* <Boot/>    */}
+       {/* <Form/> */}
+       {/* <UseReducer/> */}
+         {/* <API/> */}
+         {/* <LoginSignup/> */}
+         <InpCreatCord/>
+         {/* <UseRef/> */}
         {/* <Practice/> */}
     </div>
   )
@@ -94,3 +104,47 @@ export default App
 // }
 
 // export default App
+
+
+
+///////////////////////////////// Login signup
+// import React from 'react'
+// import { BrowserRouter as Router , Route,Routes} from 'react-router-dom'
+// import Login from './Login'
+// import SignUp from './SignUp'
+
+// const App = () => {
+//   return (
+//     <div>
+//    <Router>
+//     <Routes>
+//       <Route path='/' element={<Login/>}/>
+//       <Route path='/SignUp' element={<SignUp/>}/>
+//     </Routes>
+//    </Router>
+
+
+//     </div>
+//   )
+// }
+
+// export default App
+   //<--------------------custom hooks------------------------------->
+//    import React from 'react'
+
+// import  CustomHooks  from './CustomHooks.jsx'
+// const App = () => {
+//      let {count,increament,decreament , changecolor,color,inpchange,inpcolor}=CustomHooks() 
+//      return (
+//       //  <div style={color?{backgroundColor:'red'} : {backgroundColor:'green'}}>
+//   <div style={{backgroundColor:inpcolor}}>;
+//         <h1>count : {count}</h1>
+//         <button onClick={increament}>++</button>
+//         <button onClick={decreament}>--</button>
+//         <button onClick={changecolor}>Red/Green</button>
+//         <input type='text' onChange={inpchange}/>
+//        </div>
+//      )
+//    }
+   
+//    export default App
