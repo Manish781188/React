@@ -1,0 +1,27 @@
+#card{
+    height: 250px;
+    width: 200px;
+    /* background-color: aqua; */
+    margin: 20px;
+    display: inline-block;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+ 
+}
+img{
+    height: 70%;
+    width: 100%;
+    border-radius:  11px 11px 0 0 ;
+    
+}
+p{
+
+  margin: 5px;
+}
+button{
+    margin-left: 50px;
+    height: 30px;
+    background-color: rgb(176, 176, 194);
+    border-radius: 8px;
+    border-color: aqua;
+    cursor: pointer;
+}

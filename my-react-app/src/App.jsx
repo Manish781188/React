@@ -46,40 +46,42 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 
-import React from 'react'
-import { Clock } from './Clock'
-import Input from './input'
-import Todolist from './Todolist'
-import UseEffect from './UseEffect'
-import Practice from './Practice'
-import UseState from './UseState'
-import Boot from './Bootstap/Boot'
-import Form from './Form'
-import UseReducer from './UseReducer'
-import API from './API'
-import LoginSignup from './Login SignUp/LoginSignup'
-import UseRef from './UseRef'
-import InpCreatCord from './InpCreatCord'
-export const App = () => {
-  return (
-    <div>
-      {/* <Clock/> */}
-      {/* <Input/> */}
-      {/* <Todolist/> */}
-      {/* <UseEffect/> */}
-      {/* <UseState/> */}
-       {/* <Boot/>    */}
-       {/* <Form/> */}
-       {/* <UseReducer/> */}
-         {/* <API/> */}
-         {/* <LoginSignup/> */}
-         <InpCreatCord/>
-         {/* <UseRef/> */}
-        {/* <Practice/> */}
-    </div>
-  )
-}
-export default App
+// import React from 'react'
+// import { Clock } from './Clock'
+// import Input from './input'
+// import Todolist from './Todolist'
+// import UseEffect from './UseEffect'
+// import Practice from './Practice'
+// import UseState from './UseState'
+// import Boot from './Bootstap/Boot'
+// import Form from './Form'
+// import UseReducer from './UseReducer'
+// import API from './API'
+// import LoginSignup from './Login SignUp/LoginSignup'
+// import UseRef from './UseRef'
+// import InpCreatCord from './InpCreatCord'
+// import Createcontext from './Context Hook/Createcontext'
+// export const App = () => {
+//   return (
+//     <div>
+//       {/* <Clock/> */}
+//       {/* <Input/> */}
+//       {/* <Todolist/> */}
+//       {/* <UseEffect/> */}
+//       {/* <UseState/> */}
+//        {/* <Boot/>    */}
+//        {/* <Form/> */}
+//        {/* <UseReducer/> */}
+//          {/* <API/> */}
+//          {/* <LoginSignup/> */}
+//          {/* <InpCreatCord/> */}
+//          {/* <UseRef/> */}
+//          <Createcontext/>
+//         {/* <Practice/> */}
+//     </div>
+//   )
+// }
+// export default App
 
 //////.....................Routing
 // import React from 'react'
@@ -148,3 +150,30 @@ export default App
 //    }
    
 //    export default App
+
+
+//<-----------------------PropsDring------------------------------->
+import React, { useState } from 'react'
+import { Route,Routes} from 'react-router-dom'
+import Home from './PropsDriling/Home.jsx'
+import Card from './PropsDriling/Card.jsx'
+import NavBar from './PropsDriling/NavBar'
+
+const App = () => {
+  let [CardData, setCardData]=useState([]);
+  console.log(CardData ,"card data");
+  
+  return (
+    <div>
+   <NavBar/>
+      
+         <Routes>
+          <Route path='/' element={<Home CardData={CardData}  setCardData={setCardData}/>}/>
+          <Route path='/card' element={<Card/>}/>
+         </Routes>
+  
+    </div>
+  )
+}
+
+export default App
